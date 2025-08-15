@@ -119,71 +119,80 @@ class _HomeState extends ConsumerState<HomePage> {
                         ),
                       ),
                       SizedBox(width: w*0.02),
-            Container(
-              width: w * 0.1,
-              height: w * 0.1,
-              decoration: BoxDecoration(
-                color:Palette.whiteColor,
-                borderRadius: BorderRadius.circular(8),
-              ),
-              child: ref.watch(filterInputProvider) == ''
-                  ? PopupMenuButton<String>(
-                onSelected: (value) async {
-                  if (value == 'price') {
-                    final order = await showMenu<String>(
-                      context: context,
-                      position: RelativeRect.fromLTRB(100, 100, 0, 0),
-                      items: [
-                        PopupMenuItem(
-                          onTap: ()=> ref.read(filterInputProvider.notifier).state = 'Low to High',
-                          value: 'low',
-                          child: Text('Low to High'),
+                      Container(
+                        width: w * 0.1,
+                        height: w * 0.1,
+                        decoration: BoxDecoration(
+                          color: Palette.whiteColor,
+                          borderRadius: BorderRadius.circular(8),
                         ),
-                        PopupMenuItem(
-                          onTap: ()=> ref.read(filterInputProvider.notifier).state = 'High to Low',
-                          value: 'high',
-                          child: Text('High to Low'),
+                        child: ref.watch(filterInputProvider) == ''
+                            ? PopupMenuButton<String>(
+                          onSelected: (value) async {
+                            if (value == 'low' || value == 'high') {
+                              // Price sorting selected
+                              ref.read(filterInputProvider.notifier).state =
+                              value == 'low' ? 'Low to High' : 'High to Low';
+                              ref.read(filterTypeProvider.notifier).state = 'price';
+                            } else if (city.contains(value)) {
+                              // City sorting selected
+                              ref.read(filterInputProvider.notifier).state = value;
+                              ref.read(filterTypeProvider.notifier).state = 'city';
+                            } else if (value == 'price' || value == 'city') {
+                              // If user taps main sort category, show second-level popup menu accordingly
+                              final RelativeRect position = RelativeRect.fromLTRB(100, 100, 0, 0);
+                              List<PopupMenuEntry<String>> submenuItems;
+
+                              if (value == 'price') {
+                                submenuItems = [
+                                  const PopupMenuItem(value: 'low', child: Text('Low to High')),
+                                  const PopupMenuItem(value: 'high', child: Text('High to Low')),
+                                ];
+                              } else {
+                                if (city.isEmpty) return;
+                                submenuItems = city
+                                    .map((cityName) =>
+                                    PopupMenuItem(value: cityName, child: Text(cityName)))
+                                    .toList();
+                              }
+
+                              final selected = await showMenu<String>(
+                                context: context,
+                                position: position,
+                                items: submenuItems,
+                              );
+
+                              if (selected != null) {
+                                // Update state on submenu selection
+                                if (value == 'price') {
+                                  ref.read(filterInputProvider.notifier).state =
+                                  selected == 'low' ? 'Low to High' : 'High to Low';
+                                  ref.read(filterTypeProvider.notifier).state = 'price';
+                                } else if (value == 'city') {
+                                  ref.read(filterInputProvider.notifier).state = selected;
+                                  ref.read(filterTypeProvider.notifier).state = 'city';
+                                }
+                              }
+                            }
+                          },
+                          itemBuilder: (context) => [
+                            const PopupMenuItem(value: 'price', child: Text("Sort by Price")),
+                            const PopupMenuItem(value: 'city', child: Text("Sort by City")),
+                          ],
+                          child: const Icon(Icons.sort),
+                        )
+                            : IconButton(
+                          icon: Icon(Icons.close, color: Palette.redColor),
+                          onPressed: () {
+                            ref.read(filterInputProvider.notifier).state = '';
+                            ref.read(filterTypeProvider.notifier).state = '';
+                          },
                         ),
-                      ],
-                    );
-                    if (order != null) {
-                      ref.read(filterTypeProvider.notifier).state = 'price';
-                    }
-                  } else if (value == 'city') {
-                    if (city.isEmpty) return; // avoid empty error
-                    final order = await showMenu<String>(
-                      context: context,
-                      position: RelativeRect.fromLTRB(100, 100, 0, 0),
-                      items: city.map((cityName) {
-                        return PopupMenuItem<String>(
-                          onTap: ()=> ref.read(filterInputProvider.notifier).state = cityName,
-                          value: cityName,
-                          child: Text(cityName),
-                        );
-                      }).toList(),
-                    );
-                    if (order != null) {
-                      ref.read(filterTypeProvider.notifier).state = 'city';
-                    }
-                  }
-                },
-                itemBuilder: (context) => [
-                  const PopupMenuItem(value: 'price', child: Text("Sort by Price")),
-                  const PopupMenuItem(value: 'city', child: Text("Sort by City")),
-                ],
-                child: Icon(Icons.sort),
-              )
-                  : IconButton(
-                icon: Icon(Icons.close, color: Palette.redColor),
-                onPressed: () {
-                  ref.read(filterInputProvider.notifier).state = '';
-                  ref.read(filterTypeProvider.notifier).state = '';
-                },
-              ),
-            )
+                      )
 
 
-            ],
+
+                    ],
                   ),
                 ],
               ),
