@@ -40,19 +40,14 @@ Utilizes Riverpod for managing app state efficiently and reactively.
 Installation
 Clone the repository:
 
-bash
+
 git clone [GitHub Repository Link]
 cd [repo_folder]
 Install dependencies:
-
-bash
 flutter pub get
 Run the app:
 
-bash
-flutter run
 Notifications - Local notifications are implemented with flutter_local_notifications.
-
 Firebase push notifications are not integrated due to the need for Cloud Functions and billing.
 Backend interaction is simulated with a mock API and local Hive storage.
 
