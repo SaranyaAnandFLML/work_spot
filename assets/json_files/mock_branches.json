@@ -1,0 +1,54 @@
+[
+  {
+    "id": 1,
+    "name": "Downtown Workspace",
+    "location": "123 Main Street, Downtown",
+    "price_per_hour": 15,
+    "city": "New York",
+    "branch": "Downtown",
+    "latitude": 40.712776,
+    "longitude": -74.005974,
+    "images": [
+      "https://officesnapshots.com/wp-content/uploads/2019/09/code-working-space-offices-hamburg-4.jpg",
+      "https://media.istockphoto.com/id/1083827690/photo/employees-working-together-in-modern-open-office-space.jpg?s=612x612&w=0&k=20&c=qEdCg_pXXZ1CmPeiV6IyQH2seXcUDkIRZ5WT0_5YvzI=",
+      "https://t4.ftcdn.net/jpg/03/84/55/29/360_F_384552930_zPoe9zgmCF7qgt8fqSedcyJ6C6Ye3dFs.jpg"
+    ],
+    "description": "A modern coworking space in the heart of the city.",
+    "amenities": ["WiFi", "Meeting Rooms", "Coffee"],
+    "operating_hours": "9:00 AM - 9:00 PM"
+  },
+  {
+    "id": 2,
+    "name": "Tech Hub",
+    "location": "456 Innovation Drive",
+    "price_per_hour": 20,
+    "city": "San Francisco",
+    "branch": "Tech Park",
+    "latitude": 37.774929,
+    "longitude": -122.419418,
+    "images": [
+      "https://plus.unsplash.com/premium_photo-1684769161054-2fa9a998dcb6?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y293b3JraW5nfGVufDB8fDB8fHwwhttps://plus.unsplash.com/premium_photo-1684769161054-2fa9a998dcb6?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y293b3JraW5nfGVufDB8fDB8fHww",
+      "https://img.freepik.com/free-photo/3d-rendering-business-meeting-working-room-office-building_105762-1972.jpg"
+    ],
+    "description": "Perfect space for startups and tech teams.",
+    "amenities": ["WiFi", "Event Space", "Parking"],
+    "operating_hours": "8:00 AM - 10:00 PM"
+  },
+  {
+    "id": 3,
+    "name": "Creative Corner",
+    "location": "789 Art Lane",
+    "price_per_hour": 12,
+    "city": "Los Angeles",
+    "branch": "Arts District",
+    "latitude": 34.052235,
+    "longitude": -118.243683,
+    "images": [
+      "https://img-cdn.inc.com/image/upload/f_webp,c_fit,w_1920,q_auto/images/panoramic/getty_517610514_353435.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGCUuIzX2aRHg073JoSuEjhMOU_G1tpFUjYw&s"
+    ],
+    "description": "Inspiring environment for creatives and freelancers.",
+    "amenities": ["WiFi", "Cafe", "Workshops"],
+    "operating_hours": "10:00 AM - 8:00 PM"
+  }
+]

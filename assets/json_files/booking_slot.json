@@ -1,0 +1,211 @@
+[
+  {
+    "branch_id": 1,
+    "branch_name": "Downtown Workspace",
+    "available_dates": [
+      {
+        "date": "2025-08-13",
+        "slots": [
+          { "time": "09:00 AM - 10:00 AM", "status": "available" },
+          { "time": "10:00 AM - 11:00 AM", "status": "booked" },
+          { "time": "11:00 AM - 12:00 PM", "status": "available" }
+        ]
+      },
+      {
+        "date": "2025-08-14",
+        "slots": [
+          { "time": "09:00 AM - 10:00 AM", "status": "available" },
+          { "time": "02:00 PM - 03:00 PM", "status": "available" }
+        ]
+      },
+      {
+        "date": "2025-08-15",
+        "slots": [
+          { "time": "09:00 AM - 10:00 AM", "status": "booked" },
+          { "time": "10:00 AM - 11:00 AM", "status": "available" },
+          { "time": "11:00 AM - 12:00 PM", "status": "available" }
+        ]
+      },
+      {
+        "date": "2025-08-16",
+        "slots": [
+          { "time": "08:00 PM - 09:00 PM", "status": "available" },
+          { "time": "09:00 AM - 10:00 AM", "status": "available" }
+        ]
+      },
+      {
+        "date": "2025-08-17",
+        "slots": [
+          { "time": "09:00 AM - 10:00 AM", "status": "available" },
+          { "time": "01:00 PM - 02:00 PM", "status": "booked" }
+        ]
+      },
+      {
+        "date": "2025-08-18",
+        "slots": [
+          { "time": "03:00 PM - 04:00 PM", "status": "available" }
+        ]
+      },
+      {
+        "date": "2025-08-19",
+        "slots": [
+          { "time": "10:00 AM - 11:00 AM", "status": "available" }
+        ]
+      },
+      {
+        "date": "2025-08-20",
+        "slots": [
+          { "time": "09:00 AM - 10:00 AM", "status": "booked" }
+        ]
+      },
+      {
+        "date": "2025-08-21",
+        "slots": [
+          { "time": "11:00 AM - 12:00 PM", "status": "available" }
+        ]
+      },
+      {
+        "date": "2025-08-22",
+        "slots": [
+          { "time": "04:00 PM - 05:00 PM", "status": "available" }
+        ]
+      }
+    ]
+  },
+  {
+  "branch_id": 2,
+  "branch_name": "Tech Hub",
+  "available_dates": [
+    {
+      "date": "2025-08-13",
+      "slots": [
+        { "time": "08:00 AM - 09:00 AM", "status": "available" },
+        { "time": "09:00 AM - 10:00 AM", "status": "booked" },
+        { "time": "10:00 AM - 11:00 AM", "status": "available" }
+      ]
+    },
+    {
+      "date": "2025-08-14",
+      "slots": [
+        { "time": "09:00 AM - 10:00 AM", "status": "available" },
+        { "time": "11:00 AM - 10:00 PM", "status": "booked" }
+      ]
+    },
+    {
+      "date": "2025-08-15",
+      "slots": [
+        { "time": "08:00 AM - 09:00 AM", "status": "available" },
+        { "time": "02:00 PM - 03:00 PM", "status": "available" }
+      ]
+    },
+    {
+      "date": "2025-08-16",
+      "slots": [
+        { "time": "09:00 AM - 10:00 AM", "status": "booked" },
+        { "time": "04:00 PM - 05:00 PM", "status": "available" }
+      ]
+    },
+    {
+      "date": "2025-08-17",
+      "slots": [
+        { "time": "10:00 AM - 11:00 AM", "status": "available" },
+        { "time": "11:00 AM - 12:00 PM", "status": "available" }
+      ]
+    },
+    {
+      "date": "2025-08-18",
+      "slots": [
+        { "time": "09:00 AM - 10:00 AM", "status": "available" },
+        { "time": "05:00 PM - 06:00 PM", "status": "booked" }
+      ]
+    },
+    {
+      "date": "2025-08-19",
+      "slots": [
+        { "time": "02:00 PM - 03:00 PM", "status": "available" }
+      ]
+    },
+    {
+      "date": "2025-08-20",
+      "slots": [
+        { "time": "08:00 AM - 09:00 AM", "status": "available" }
+      ]
+    },
+    {
+      "date": "2025-08-21",
+      "slots": [
+        { "time": "09:00 AM - 10:00 AM", "status": "booked" }
+      ]
+    },
+    {
+      "date": "2025-08-22",
+      "slots": [
+        { "time": "03:00 PM - 04:00 PM", "status": "available" }
+      ]
+    }
+  ]
+},
+  {
+  "branch_id": 3,
+  "branch_name": "Creative Corner",
+  "available_dates": [
+    {
+      "date": "2025-08-13",
+      "slots": [
+        { "time": "10:00 AM - 11:00 AM", "status": "available" },
+        { "time": "11:00 AM - 12:00 PM", "status": "booked" }
+      ]
+    },
+    {
+      "date": "2025-08-14",
+      "slots": []
+    },
+    {
+      "date": "2025-08-15",
+      "slots": [
+        { "time": "11:00 AM - 12:00 PM", "status": "available" },
+        { "time": "01:00 PM - 02:00 PM", "status": "available" }
+      ]
+    },
+    {
+      "date": "2025-08-16",
+      "slots": []
+    },
+    {
+      "date": "2025-08-17",
+      "slots": [
+        { "time": "03:00 PM - 04:00 PM", "status": "available" }
+      ]
+    },
+    {
+      "date": "2025-08-18",
+      "slots": [
+        { "time": "10:00 AM - 11:00 AM", "status": "booked" },
+        { "time": "05:00 PM - 06:00 PM", "status": "available" }
+      ]
+    },
+    {
+      "date": "2025-08-19",
+      "slots": []
+    },
+    {
+      "date": "2025-08-20",
+      "slots": [
+        { "time": "07:00 PM - 08:00 PM", "status": "available" }
+      ]
+    },
+    {
+      "date": "2025-08-21",
+      "slots": []
+    },
+    {
+      "date": "2025-08-22",
+      "slots": [
+        { "time": "04:00 PM - 05:00 PM", "status": "available" }
+      ]
+    }
+  ]
+}
+
+
+]

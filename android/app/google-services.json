@@ -1,0 +1,402 @@
+{
+  "project_info": {
+    "project_number": "743635609830",
+    "project_id": "learn-9e6a9",
+    "storage_bucket": "learn-9e6a9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:743635609830:android:ff5895a2642f6c26e7f327",
+        "android_client_info": {
+          "package_name": "com.ab.call"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "743635609830-sjk5dcgt7vvv2qeac5qdejt0kn9ek8p6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSpAURQhMO6O6epiWgJ2hq1Cv1W3vuug8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "743635609830-r2fs34nc3jsh0ecgtr4ido1js84qqqfc.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "743635609830-bdu01ufih0pgghsmpr5v9hqdgld5lu05.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.ecommerceRvrpodLearn"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:743635609830:android:a784f91d5d684264e7f327",
+        "android_client_info": {
+          "package_name": "com.example.coworking_space"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "743635609830-sjk5dcgt7vvv2qeac5qdejt0kn9ek8p6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSpAURQhMO6O6epiWgJ2hq1Cv1W3vuug8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "743635609830-r2fs34nc3jsh0ecgtr4ido1js84qqqfc.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "743635609830-bdu01ufih0pgghsmpr5v9hqdgld5lu05.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.ecommerceRvrpodLearn"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:743635609830:android:d5f706a9df964663e7f327",
+        "android_client_info": {
+          "package_name": "com.example.ecommerce_rvrpod_learn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "743635609830-grp2ajc9o6hp2edeki8gareb1pkic5f5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ecommerce_rvrpod_learn",
+            "certificate_hash": "41503a48965c19c99af02585bbefb354830b101d"
+          }
+        },
+        {
+          "client_id": "743635609830-sjk5dcgt7vvv2qeac5qdejt0kn9ek8p6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSpAURQhMO6O6epiWgJ2hq1Cv1W3vuug8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "743635609830-r2fs34nc3jsh0ecgtr4ido1js84qqqfc.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "743635609830-bdu01ufih0pgghsmpr5v9hqdgld5lu05.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.ecommerceRvrpodLearn"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:743635609830:android:d3186ba6ee341a31e7f327",
+        "android_client_info": {
+          "package_name": "com.example.myapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "743635609830-sjk5dcgt7vvv2qeac5qdejt0kn9ek8p6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSpAURQhMO6O6epiWgJ2hq1Cv1W3vuug8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "743635609830-r2fs34nc3jsh0ecgtr4ido1js84qqqfc.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "743635609830-bdu01ufih0pgghsmpr5v9hqdgld5lu05.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.ecommerceRvrpodLearn"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:743635609830:android:a1d71b78c0f91f98e7f327",
+        "android_client_info": {
+          "package_name": "com.ignou.studynotes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "743635609830-sjk5dcgt7vvv2qeac5qdejt0kn9ek8p6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSpAURQhMO6O6epiWgJ2hq1Cv1W3vuug8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "743635609830-r2fs34nc3jsh0ecgtr4ido1js84qqqfc.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "743635609830-bdu01ufih0pgghsmpr5v9hqdgld5lu05.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.ecommerceRvrpodLearn"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:743635609830:android:dd1d80b3449a7f13e7f327",
+        "android_client_info": {
+          "package_name": "com.saranya.learn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "743635609830-k9nvg373b9ss91cu0iftrt55o0drd22u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.saranya.learn",
+            "certificate_hash": "b66b9da90dea872c334e179353606464608f0ff9"
+          }
+        },
+        {
+          "client_id": "743635609830-qbc5eo9vc89t1nee537um9ge45ctejqd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.saranya.learn",
+            "certificate_hash": "41503a48965c19c99af02585bbefb354830b101d"
+          }
+        },
+        {
+          "client_id": "743635609830-sjk5dcgt7vvv2qeac5qdejt0kn9ek8p6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSpAURQhMO6O6epiWgJ2hq1Cv1W3vuug8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "743635609830-r2fs34nc3jsh0ecgtr4ido1js84qqqfc.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "743635609830-bdu01ufih0pgghsmpr5v9hqdgld5lu05.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.ecommerceRvrpodLearn"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:743635609830:android:cde6a81a14878a69e7f327",
+        "android_client_info": {
+          "package_name": "com.saranya.videocall"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "743635609830-sjk5dcgt7vvv2qeac5qdejt0kn9ek8p6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSpAURQhMO6O6epiWgJ2hq1Cv1W3vuug8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "743635609830-r2fs34nc3jsh0ecgtr4ido1js84qqqfc.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "743635609830-bdu01ufih0pgghsmpr5v9hqdgld5lu05.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.ecommerceRvrpodLearn"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:743635609830:android:de27b9e3452dbdede7f327",
+        "android_client_info": {
+          "package_name": "com.shopyfy.shopywell"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "743635609830-fsoa3242q7ttae2kh752f43ct21gn9ul.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shopyfy.shopywell",
+            "certificate_hash": "37e029d433029ce888d17636f3e2cbe5575176ac"
+          }
+        },
+        {
+          "client_id": "743635609830-sjk5dcgt7vvv2qeac5qdejt0kn9ek8p6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSpAURQhMO6O6epiWgJ2hq1Cv1W3vuug8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "743635609830-r2fs34nc3jsh0ecgtr4ido1js84qqqfc.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "743635609830-bdu01ufih0pgghsmpr5v9hqdgld5lu05.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.ecommerceRvrpodLearn"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:743635609830:android:39134d2b2fe5c825e7f327",
+        "android_client_info": {
+          "package_name": "com.test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "743635609830-sjk5dcgt7vvv2qeac5qdejt0kn9ek8p6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSpAURQhMO6O6epiWgJ2hq1Cv1W3vuug8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "743635609830-r2fs34nc3jsh0ecgtr4ido1js84qqqfc.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "743635609830-bdu01ufih0pgghsmpr5v9hqdgld5lu05.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.ecommerceRvrpodLearn"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:743635609830:android:57e8ff2545030c30e7f327",
+        "android_client_info": {
+          "package_name": "com.workspot.customer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "743635609830-sjk5dcgt7vvv2qeac5qdejt0kn9ek8p6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSpAURQhMO6O6epiWgJ2hq1Cv1W3vuug8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "743635609830-r2fs34nc3jsh0ecgtr4ido1js84qqqfc.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "743635609830-bdu01ufih0pgghsmpr5v9hqdgld5lu05.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.ecommerceRvrpodLearn"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
