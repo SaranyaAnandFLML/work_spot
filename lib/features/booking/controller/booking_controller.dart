@@ -102,6 +102,7 @@ class BookingController extends ChangeNotifier {
       final notificationController = ref.watch(notificationControllerProvider.notifier);
       await notificationController.addNotification(notification);
       ref.refresh(myBookingsProvider);
+      ref.refresh(listNotificationsProvider);
       _setLoading(false);
     } catch (e, st) {
      throw e;
@@ -129,6 +130,7 @@ class BookingController extends ChangeNotifier {
 
     // Refresh the bookings provider to reload updated data
     ref.refresh(myBookingsProvider);
+    ref.refresh(listNotificationsProvider);
   }
 
 

@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:hive_ce_flutter/adapters.dart';
-
 import '../../../core/global/variables.dart';
-import '../../../models/notification_model.dart';
 import '../../../theme/pallete.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../controller/notifications_controller.dart';

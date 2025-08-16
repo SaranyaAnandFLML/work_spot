@@ -35,7 +35,7 @@ class _MyBookingsState extends ConsumerState<MyBookings> {
 
   @override
   Widget build(BuildContext context) {
-    final controller = ref.watch(bookingControllerProvider);
+    final asyncBookings = ref.watch(myBookingsProvider);
 
     final w = MediaQuery.of(context).size.width;
     final h = MediaQuery.of(context).size.height;
@@ -53,7 +53,7 @@ class _MyBookingsState extends ConsumerState<MyBookings> {
       ),
       body: Padding(
         padding: EdgeInsets.fromLTRB(w * 0.06, w * 0.03, w * 0.06, w * 0.06),
-        child: ref.read(myBookingsProvider).when(
+        child: asyncBookings.when(
           data: (objects) {
             return objects.isEmpty
                 ? const Center(child: Text('NO DATA FOUND'))
@@ -138,7 +138,7 @@ class _MyBookingsState extends ConsumerState<MyBookings> {
                                       if (confirm == true) {
                                         NotificationModel noti=NotificationModel(
                                             title: 'Booking deleted!',
-                                            message: 'your booking for ${booking.workspaceName} workspace has beeen deletd!');
+                                            message: 'your booking for ${booking.workspaceName} workspace has been deleted!');
                                         deleteBooking(key,noti,ref);
 
                                       }
