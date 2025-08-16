@@ -37,7 +37,7 @@ class BranchRepository{
         final nameMatch = branch.name?.toLowerCase().contains(search.toLowerCase()) ?? false;
         final cityMatch = branch.city?.toLowerCase().contains(search.toLowerCase()) ?? false;
         final branchMatch = branch.branch?.toLowerCase().contains(search.toLowerCase()) ?? false;
-        return nameMatch || cityMatch || branchMatch;
+        return nameMatch || cityMatch || branchMatch; 
       }).toList();
     }
 

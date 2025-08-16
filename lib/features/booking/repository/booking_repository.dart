@@ -1,6 +1,14 @@
 import 'dart:convert';
 import 'package:flutter/services.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:hive_ce_flutter/adapters.dart';
+import '../../../models/booking_model.dart';
 import '../../../models/booking_slot_model.dart';
+import '../../../models/notification_model.dart';
+
+final bookingRepositoryProvider = Provider<BookingRepository>((ref) {
+  return BookingRepository();
+});
 
 class BookingRepository {
   final String jsonPath = 'assets/json_files/booking_slot.json';
@@ -49,4 +57,40 @@ class BookingRepository {
 
     return availableDate.slots; // List<Slot>
   }
+
+  Future<void> saveBooking({
+    required String bookingSlot,
+    required DateTime bookingDate,
+    required String workspaceName,
+    required String city,
+    required String branch,
+    required String location,
+    required double pricePerHour,
+    required String userId, // needs to be passed in
+  }) async {
+    final box = await Hive.openBox<Booking>('bookings');
+    final booking = Booking(
+      bookingTime: DateTime.now(),
+      bookingSlot: bookingSlot,
+      bookingDate: bookingDate,
+      userId: userId,
+      workspaceName: workspaceName,
+      city: city,
+      branch: branch,
+      pricePerHour: pricePerHour,
+      location: location,
+    );
+    await box.add(booking);
+  }
+
+  Future<List<Booking>> listBookings() async {
+    final box = await Hive.openBox<Booking>('bookings');
+    return box.values.toList();
+  }
+
+  Future<void> deleteBooking(int bookingKey) async {
+    final box = await Hive.openBox<Booking>('bookings');
+    await box.delete(bookingKey);
+  }
+
 }

@@ -48,31 +48,20 @@ class _BookingScreenState extends ConsumerState<BookingScreen> {
     required String branch,
     required String location,
     required double pricePerHour,
+    required NotificationModel notification,
   }) async {
-    final box = await Hive.openBox<Booking>('bookings');
-    final box1 = await Hive.openBox<NotificationModel>('notifications');
-
-    final booking = Booking(
-      bookingTime: DateTime.now(),
+    await ref.read(bookingControllerProvider).saveBooking(
       bookingSlot: bookingSlot,
       bookingDate: bookingDate,
-      userId: userId,
       workspaceName: workspaceName,
       city: city,
-      branch: branch,
-      pricePerHour: pricePerHour,
+      branch:branch,
       location: location,
+      pricePerHour: pricePerHour,
+      userId: '1',
+      ref: ref,
+      notification: notification,
     );
-
-    await box.add(booking);
-
-    final notification = NotificationModel(
-      title: "Booking Confirmed!",
-      message: "your booking for $workspaceName has been confirmed",
-    );
-    await box1.add(notification);
-    final notificationService = NotificationService();
-    notificationService.showNotification(notification);
   }
 
   @override
@@ -312,6 +301,9 @@ class _BookingScreenState extends ConsumerState<BookingScreen> {
                       actions: [
                         TextButton(
                           onPressed: () {
+                            NotificationModel noti=NotificationModel(
+                                title: "Booking Confirmed!",
+                                message: 'Your booking for ${widget.data.name} work space has been confirmed');
                             saveBooking(
                               bookingSlot: selectedSlot!,
                               bookingDate: (controller.selectedDate)!,
@@ -320,6 +312,7 @@ class _BookingScreenState extends ConsumerState<BookingScreen> {
                               branch: widget.data.branch,
                               pricePerHour: widget.data.pricePerHour,
                               location: widget.data.location,
+                              notification: noti,
                             ).then((onValue) {
                               showSnackBar(context, 'Booking confirmed!');
                               Navigator.pushAndRemoveUntil(
